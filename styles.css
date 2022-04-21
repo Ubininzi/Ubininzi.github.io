@@ -1,0 +1,66 @@
+body{
+    background-color:rgb(100, 133, 36);
+    background-image: url(Media/multicam.jpg);
+}
+
+nav{
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: auto;
+    margin-top: 50px;
+    padding: 20px;
+    width: 70%;
+    height: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-content: flex-start;
+    flex-direction: Row;
+    align-items: center;
+}
+
+.FirstCollumn{
+    margin-left: 2.5%;
+    margin-right: 0.25%;
+    display: flex;
+    justify-content: space-around;
+    align-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.SecondCollumn{
+    margin-right: 2.5%;
+    margin-left: 0.25%;
+    display: flex;
+    justify-content: space-around;
+    align-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+}
+
+a>img{
+    width: 640px; 
+    height: 360px;
+    margin: 20px;
+}
+
+a>img:hover{
+    animation-name: Zoom;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes Zoom {
+    from{
+        transform: scale(100%);
+    }
+    to{
+        transform: scale(105%);
+    }
+}
+
+.Description{
+    color: rgb(0, 255, 255);
+    margin: 5% 10% auto 10%;
+}
