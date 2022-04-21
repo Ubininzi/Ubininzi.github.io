@@ -1,13 +1,11 @@
 body{
     background-color:rgb(100, 133, 36);
     background-image: url(Media/multicam.jpg);
+    font-family: 'Permanent Marker', cursive;
 }
 
 nav{
-    margin-left: 15%;
-    margin-right: 15%;
-    margin-bottom: auto;
-    margin-top: 50px;
+    margin: 50px 15% auto 15%;
     padding: 20px;
     width: 70%;
     height: 30%;
@@ -60,7 +58,49 @@ a>img:hover{
     }
 }
 
-.Description{
+.Description {
+    color: rgb(0 0 0);
+    background-color: rgba(0, 0, 0, 0.300);
+    display: block;
+    border: 50px;
+    border: solid black;
+    border-radius: 15%;
+    margin: 5% 20% auto 20%;                /**//*                 fefefefefefefefe     *//**//**/
+    padding: 2%;
+/*    background-image: url(Media/emblem.png);*/
+    background-size: 100%;
+    background-repeat:round;
+    background-position: 50%;
+    background-image: url(media/snowCamo.jpg);
+}
+
+.TextOnAviation{
     color: rgb(0, 255, 255);
-    margin: 5% 10% auto 10%;
+    text-align: center;
+    pointer-events: none;
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    font-size: 30pt;
+    opacity:0 ;
+    background-size: 1000%;
+    background-color: black;
+}
+
+.Aviation:hover .TextOnAviation{
+    animation-name: appearText;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes appearText {
+    from{
+        opacity:0;
+    }
+    to{
+        opacity: 1;
+        background-color: rgba(155, 155, 155, 0.658);
+        background-size: 500%;
+    }
+
 }
