@@ -1,7 +1,7 @@
 body{
     background-color:rgb(100, 133, 36);
     background-image: url(Media/multicam.jpg);
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Play', sans-serif;
 }
 
 nav{
@@ -41,12 +41,16 @@ a>img{
     width: 640px; 
     height: 360px;
     margin: 20px;
+    filter: grayscale(1);
 }
-
+.Aviation{
+    position: relative;
+}
 a>img:hover{
     animation-name: Zoom;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
+    filter: grayscale(0);
 }
 
 @keyframes Zoom {
@@ -65,11 +69,10 @@ a>img:hover{
     border: 50px;
     border: solid black;
     border-radius: 15%;
-    margin: 5% 20% auto 20%;                /**//*                 fefefefefefefefe     *//**//**/
+    margin: 5% 20% auto 20%;               
     padding: 2%;
-/*    background-image: url(Media/emblem.png);*/
-    background-size: 100%;
-    background-repeat:round;
+    background-size:40%;
+    background-repeat:repeat;   
     background-position: 50%;
     background-image: url(media/snowCamo.jpg);
 }
@@ -78,19 +81,18 @@ a>img:hover{
     color: rgb(0, 255, 255);
     text-align: center;
     pointer-events: none;
-    position: absolute;
-    top: 25%;
-    left: 30%;
+    position:absolute;
+    top: 30%;
+    left: 0%;
     font-size: 30pt;
     opacity:0 ;
-    background-size: 1000%;
-    background-color: black;
 }
 
 .Aviation:hover .TextOnAviation{
     animation-name: appearText;
     animation-duration: 0.3s;
     animation-fill-mode: forwards;
+
 }
 
 @keyframes appearText {
@@ -99,8 +101,24 @@ a>img:hover{
     }
     to{
         opacity: 1;
-        background-color: rgba(155, 155, 155, 0.658);
-        background-size: 500%;
     }
 
+}
+
+@media screen and (max-width: 1400px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+    .FirstCollumn{
+        margin: 2.5%;
+    }
+    .SecondCollumn{
+        margin: 2.5%;
+    }
+}
+
+nav>div>div>div>p{
+    font-size: 20pt;
+    margin: 15px 15px 0 15px;
 }
