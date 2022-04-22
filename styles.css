@@ -16,24 +16,24 @@ nav{
     align-items: center;
 }
 
-.FirstCollumn{
+.FirstColumn{
     margin-left: 2.5%;
     margin-right: 0.25%;
     display: flex;
     justify-content: space-around;
     align-content: flex-start;
-    flex-direction: column;
+    flex-direction: Column;
     align-items: center;
 
 }
 
-.SecondCollumn{
+.SecondColumn{
     margin-right: 2.5%;
     margin-left: 0.25%;
     display: flex;
     justify-content: space-around;
     align-content: flex-start;
-    flex-direction: column;
+    flex-direction: Column;
     align-items: center;
 }
 
@@ -41,11 +41,12 @@ a>img{
     width: 640px; 
     height: 360px;
     margin: 20px;
-    filter: grayscale(1);
+    filter: grayscale(0.8);
 }
-.Aviation{
+.Button-Img{
     position: relative;
 }
+
 a>img:hover{
     animation-name: Zoom;
     animation-duration: 0.5s;
@@ -62,38 +63,27 @@ a>img:hover{
     }
 }
 
-.Description {
-    color: rgb(0 0 0);
-    background-color: rgba(0, 0, 0, 0.300);
-    display: block;
-    border: 50px;
-    border: solid black;
-    border-radius: 15%;
-    margin: 5% 20% auto 20%;               
-    padding: 2%;
-    background-size:40%;
-    background-repeat:repeat;   
-    background-position: 50%;
-    background-image: url(media/snowCamo.jpg);
-}
-
-.TextOnAviation{
-    color: rgb(0, 255, 255);
+.TextOnImg{
+    color: rgb(235, 87, 0);
+    display: flex;
+    flex-direction: column;
     text-align: center;
     pointer-events: none;
     position:absolute;
     top: 30%;
-    left: 0%;
-    font-size: 30pt;
+    left: 30%;
+    bottom: 30%;
+    right: 30%;
+    font-size: 20pt;
     opacity:0 ;
 }
 
-.Aviation:hover .TextOnAviation{
+.Button-Img:hover .TextOnImg{
     animation-name: appearText;
     animation-duration: 0.3s;
     animation-fill-mode: forwards;
-
 }
+
 
 @keyframes appearText {
     from{
@@ -108,17 +98,18 @@ a>img:hover{
 @media screen and (max-width: 1400px) {
     nav {
         display: flex;
-        flex-direction: column;
+        flex-direction: Column;
     }
-    .FirstCollumn{
+    .FirstColumn{
         margin: 2.5%;
     }
-    .SecondCollumn{
+    .SecondColumn{
         margin: 2.5%;
     }
 }
 
-nav>div>div>div>p{
+.DescriptionText{
+    margin: 0%;
     font-size: 20pt;
-    margin: 15px 15px 0 15px;
+    color: rgb(0, 255, 255);
 }
