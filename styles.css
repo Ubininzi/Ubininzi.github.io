@@ -1,6 +1,5 @@
 body{
-    background-color:rgb(100, 133, 36);
-    background-image: url(Media/multicam.jpg);
+   background-image: url(Media/multicam.jpg);
     font-family: 'Play', sans-serif;
 }
 
@@ -97,6 +96,7 @@ a>img:hover{
 
 @media screen and (max-width: 1400px) {
     nav {
+        margin-top: 2.5%;
         display: flex;
         flex-direction: Column;
     }
