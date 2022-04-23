@@ -17,6 +17,7 @@ nav{
 }
 
 nav>div>p{
+    margin: 14% 5% 0 5%;
     padding-bottom: 5%;
     font-size: 20px;
     color: black;
@@ -42,16 +43,19 @@ nav>div>a>img{
 .WikiNote{
     font-size: 18px;
     background-color: aquamarine;
-    margin: 5%;
+    margin: 3%;
     display: flex;
     flex-direction: row;
     width: auto;
     height: auto;
+    padding: 0.2%;
+}
+.ReverseRow{
+    flex-direction: row-reverse;
 }
 
 .Sticky-Name>p{
     width: fit-content;
-    background-color: white;
     display: flex;
     justify-content: center;
     position: sticky;
@@ -75,3 +79,17 @@ nav>div>a>img{
     }
 }
 
+@media screen and (max-width: 950px){
+    .WikiNote{
+        flex-direction: column;
+
+    }
+}
+
+@media screen and (max-width: 500px){
+    .WikiNote>div>a>img{
+        width: 30%;
+        height: 30%;
+
+    }
+}
