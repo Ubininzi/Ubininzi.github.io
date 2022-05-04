@@ -1,0 +1,94 @@
+body{
+    font-family: 'Exo 2', sans-serif;
+    background-image: url(Media/helisBg.jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+}
+nav{
+    width: 105%;
+    height: 50px;
+    background-color: rgb(0, 174, 255);
+    margin: -11px 0 10px -0.7%;
+    position: fixed;
+    top: 1%;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+nav>div>p{
+    margin: 14% 5% 0 5%;
+    padding-bottom: 5%;
+    font-size: 20px;
+    color: black;
+    top: 0%;
+}
+
+nav>div>a>img{
+    width: 70px;
+    height: 49px;
+}
+
+.WikiNote>div>a>img{
+    width: 330px;
+    height: 200px;
+}
+
+.WikiNote>div>p{
+    margin: 1% ;
+    color: black;
+    
+}
+
+.WikiNote{
+    font-size: 18px;
+    background-color: rgb(94, 92, 255);
+    margin: 3%;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: auto;
+    padding: 0.2%;
+}
+.ReverseRow{
+    flex-direction: row-reverse;
+}
+.Sticky-Name>p{
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 1.5%;
+    left: 40%;
+}
+
+.WikiNote>div>a>img:hover{
+    animation-name: Zoom;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes Zoom {
+    from{
+        transform: scale(100%);
+    }
+    to{
+        transform: scale(95%);
+    }
+}
+
+@media screen and (max-width: 950px){
+    .WikiNote{
+        flex-direction: column;
+
+    }
+}
+
+@media screen and (max-width: 500px){
+    .WikiNote>div>a>img{
+        width: 30%;
+        height: 30%;
+
+    }
+}
